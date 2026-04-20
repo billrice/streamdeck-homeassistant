@@ -1,3 +1,7 @@
+add Label Font Size
+<img width="1004" height="730" alt="image" src="https://github.com/user-attachments/assets/c5b7e74f-f2ae-4efa-ad42-da611736bd32" />
+
+
 # StreamDeck Home-Assistant Plugin
 The aim of this project is to allow owners of an elgato StreamDeck to control their entities or display sensor data via
 their StreamDeck. As the code is very generic, nearly every sensor should work out of the box as well as every
