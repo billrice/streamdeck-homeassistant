@@ -41,7 +41,7 @@ jobs:
       - name: Update manifest version
         shell: bash
         run: |
-          node -e "const fs=require('fs'); const file='public/manifest.json'; const manifest=JSON.parse(fs.readFileSync(file, 'utf8')); manifest.Version='${{ steps.tagName.outputs.tag }}.${{ github.run_number }}'; fs.writeFileSync(file, JSON.stringify(manifest, null, 2) + '\n');"
+          node -e "const fs=require('fs'); const file='public/manifest.json'; const manifest=JSON.parse(fs.readFileSync(file, 'utf8')); manifest.Version='${{ steps.tagName.outputs.tag }}'; fs.writeFileSync(file, JSON.stringify(manifest, null, 2) + '\n');"
 
       - name: NPM Install
         run: npm ci
